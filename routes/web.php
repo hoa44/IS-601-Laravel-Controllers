@@ -11,15 +11,28 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+// Route::get('/', function () {
+    // return view('pages.index');
+//});
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+// setting up named routes
 
-Route::get('/contact', function () {
+Route::get('/', 'PagesController@home')->name('index');
+
+Route::get('/about', 'PagesController@about')->name('about');
+
+Route::get('/contact', 'PagesController@contact')->name('contact');
+
+Route::post('/contact', 'PagesController@store')->name('contact.store');
+
+
+
+
+//Route::get('/about', function () {
+  //  return view('pages.about');
+//});
+
+/*Route::get('/contact', function () {
     return view('pages.contact');
 });
 
@@ -31,9 +44,9 @@ Route::post('/contact', function () {
     echo "Message: " . $data['body'];
     //dd($data);
 
-    //dd(request());
-    //echo "hello I worked";
-    //return view('welcome');
-});
+    dd(request());
+    echo "hello I worked";
+    return view('welcome');
+}); */
 
 
