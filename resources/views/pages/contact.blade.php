@@ -6,11 +6,16 @@
     <h1>This will be my Contact Page</h1>
     <p class="lead">Please use this form to contact the site owner.</p>
 
-    <form action="/contact" method="post">
+    <form action="{{route('contact.store')}}" method="post">
         @csrf
         <div class="form-group">
             <label for="email">Email address</label>
             <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" class="form-control" id="name" >
         </div>
 
         <div class="form-group">

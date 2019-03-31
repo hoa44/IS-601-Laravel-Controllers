@@ -6,22 +6,38 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    function home () {
+    function home()
+    {
         return view('pages.index');
     }
 
-    function about () {
+    function about()
+    {
         return view('pages.about');
     }
-    function contact () {
+
+    function contact()
+    {
         return view('pages.contact');
 
 
     }
-    function store (Request $request) {
+
+    function store(Request $request)
+    {
 
         $name = $request->name;
-        dd($request);
+        //dd($request);
+
+        return redirect()->route('thanks', ['name' => $name]);
+
+    }
+
+    function thanks($name, Request $request) {
+
+
+
+        return view('pages.thanks')->with(compact('name'));
 
     }
 }
