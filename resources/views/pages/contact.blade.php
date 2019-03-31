@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <h1>This will be my Contact Page</h1>
+    <h1>Contact Page</h1>
     <p class="lead">Please use this form to contact the site owner.</p>
 
     <form action="{{route('contact.store')}}" method="post">

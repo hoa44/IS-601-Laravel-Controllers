@@ -9,9 +9,9 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <h class="display-3">IS-601, Laravel Named Routes and Controllers</h>
+            <p>This is a an exercise designed to instroduce us to using named routes and setting up our first simple controller within Laravel.</p>
+            <p><a class="btn btn-primary btn-lg" href="https://laravel.com/docs/5.8/controllers" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
 
